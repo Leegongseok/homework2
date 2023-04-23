@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*전체 구획 설정*/
+        #body{
+            margin-left: 130px;
+            margin-right:130px;
+            width: 1300px;
+            height: 3150px;
+            border: solid black 1px;
+            background-color:azure;
+            
+            
+        }
+        #top{
+            float: left;
+            width:1300px;
+            height:200px;
+            border: solid red 2px;
+        }
+        #middle {
+            float: left;
+            margin-top: 50px;
+            width: 1300px;
+            height: 2900px;
+            border: solid blue 3px;
+
+        }
+        #middle_top{
+            float: left;
+            width: 1300px;
+            height:400px;
+            border: solid yellow 3px;
+            background-repeat: no-repeat;
+            background-size: 40%;
+        }
+        .middle_top_left h2{
+                margin-left: 120px;
+                
+        }
+        
+        .a{
+            float: right;
+            margin-right: 350px;
+            margin-top: 100px;
+            width:300px;
+            height: 400px;
+            font-size: 20px;
+            
+        }
+        #middle_bottom{
+            float: left;
+            width: 1300px;
+           height: 2500px;
+            border: solid rgb(0, 255, 136) 3px;
+
+        }
+          /*전체 구획 설정*/
+            /*탑 구획 설정 전체 크기 
+            width:1080px;
+            height:200px;*/
+            .top_left{
+                float: left;
+                width: 500px;
+                height: 200px;
+                border: solid rgba(0, 255, 242, 0.534) 3px;
+
+            }
+            .top_left h1{
+                margin-top: 80px;
+                margin-left: 150px;
+                
+            }
+            .top_right{
+                float: right;
+                width: 500px;
+                height: 200px;
+
+                border: solid rgb(230, 0, 255) 3px;
+
+
+            }
+            /*탑 구획 설정*/
+            .m{
+                float: left;
+                width: 350px;
+                height: 800px;
+                margin-left: 70px;
+                margin-top: 20px;
+                border: solid 1px orange;
+                font-size: 16px;
+            }
+            .good{
+                list-style: none;
+                font-size: 18px;
+            }
+            .good li{
+                float:left;
+                margin-left: 15px;
+                margin-right: 10px;
+                
+            }
+            .good span{
+                float:left;
+            }
+            .img{width:350px;
+                height: 400px;
+                margin-top: 20px;
+            }.img1{
+                width:350px;
+                height: 350px;
+                margin-top:0px
+            }
+    </style>
+</head>
+<body>
+    <div id="body">
+        <div id="top">
+            <div class="top_left"><h1>먹을것</h1>
+            <hr></div>
+            
+            <div class="top_right">
+                <ul class="good">
+                    <li ><a href="#one">서귀포</a></li>
+                    <span>|</span>
+                    <li ><a href="#two">안덕</a></li>
+                    <span>|</span>
+                    <li ><a href="#three">애월읍</a></li>
+             </ul></div>
+        </div>
+        <div id="middle">
+
+            <div id="middle_top">
+                <div class="middle_top_left"><h2>제주도 카페</h2></div>
+                
+                
+            </div>
+
+            <div id="middle_bottom">
+                <div class="m" id="one">바다바라
+                    <img class="img" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MDdfMTk2%2FMDAxNjUxOTAwMDgxMjA0.3fFrUI7XCUjph1TuCtelu8Vau09mk0bM4jJh-iw6cIgg.ooSqfNbvxz3RuMOHP3hemrvGny7DfVLL1Da3fh9xOpcg.JPEG.tidy2080%2F1651900070667.jpg&type=sc960_832" >
+                    <h3>시그니처 메뉴</h3>
+                    <ul>
+                        <ol>
+                            <li>흑임자 돌담라뗴</li>
+                            <li>망고선셋 스무디</li>
+                        </ol>
+                    </ul>
+                    <p>위치:제주 서귀포시 중문관광로72번길 29-51</p>
+                    <p>중문 해수욕장이 보이는 압도적 오션 파노라마뷰</p>
+                    
+                </div>
+                <div class="m">번커하우스
+                    <img class="img" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjJfNjgg%2FMDAxNjcxNzA1NTc4MTIz.UOBuSwG763Pzbuva5GxG4bt8P6xKFsvIZYUhTs1Zu9kg.S8v7v2xIexZxhqztuGHl4xhWU1y55I-EwJAedjPI4X8g.JPEG.jjongnr%2FScreenshot%25A3%25DF20221222%25A3%25DF190215.jpg&type=sc960_832" >
+                    <ul>
+                        <li>위치:제주도 서귀포시 막숙포로 41번길 66</li>
+                        <li>영업시간:매일 9:00~21:00</li>
+                        <li>주차:가능</li>
+                    </ul>
+                    
+                    
+                    
+                </p>                    
+                </div>
+                <div class="m">
+                    
+                </div>
+                <div class="m" id="two">갤럭시아
+                    <img  class="img" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MjNfMzgg%2FMDAxNjUzMjMyOTc4ODE1.tJ29a3LfMe_2zYMQ_JOGvHMFz-VJ6hiA5PItKXAw790g.QCMbuS15UDL0CvwHDbcU4CtzlDcNoCt0OYmWmBR1W_Yg.JPEG.yejirhee2016%2FIMG_7616.jpg&type=sc960_832" >
+                    <h3>시그니처메뉴</h3>
+                    <p>산방송이</p>
+                    <ul>
+                    <li>위치:제주 서귀포시 안덕면 사계남로216번길 29 </li>
+                    <li>영업시간:매일 10:00 - 18:00
+                        17:30 라스트오더
+                    </li>
+                    
+                </ul>
+                </div>
+                <div class="m">두가시
+                    <img class="img" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20191112_157%2F1573516825809m6woO_JPEG%2FSGs4H4b3C60AV_UcHNapBv6Q.jpg" >
+                   <ul>
+                    <li>위치:제주 서귀포시 안덕면 대평감산로 9</li>
+                    <h3>영업시간</h3>
+                  </ul>
+                  <p>일
+                    10:00 - 19:00</p>
+                    <p> 월 
+                        10:00 - 19:00</p>
+                    <p>화 10:00 - 19:00</p>
+                   <p>수
+                    정기휴무 (매주 수요일)</p> 
+                    <p> 목
+                        10:00 - 19:00</p>
+                   <p> 금
+                    10:00 - 19:00</p>
+                   <p>토
+                    10:00 - 19:00</p>
+                    
+                </div>
+                <div class="m">
+                </div>
+                <div class="m" id="three">푸르곤
+                    <img class="img" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220618_260%2F1655521519726DiE3q_JPEG%2FKakaoTalk_20220609_153244586.jpg" >
+                    <ul>
+                        <li>위치:제주 제주시 애월읍 납읍로 84</li>
+                        <h3>영업시간</h3>
+                        </ul>
+                        <P>일
+                            10:00 - 20:00
+                            19:00 라스트오더</P>
+                        <P>월
+                            10:00 - 20:00
+                            19:00 라스트오더</P>
+                        <P>화
+                            10:00 - 20:00
+                            19:00 라스트오더</P>
+                        <P>수
+                            10:00 - 20:00
+                            19:00 라스트오더</P>
+                        <P>목
+                            10:00 - 20:00
+                            19:00 라스트오더</P>
+                        <P>금
+                            10:00 - 20:00
+                            19:00 라스트오더</P>
+                        <P>토
+                            10:00 - 20:00
+                            19:00 라스트오더</P>
+                </div>
+                <div class="m">해지게
+                    <img class="img"  src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230106_130%2F1672987010407WjhO5_PNG%2F2.png" >
+                    <ul>
+                        <li>위치:제주 제주시 애월읍 애월북서길 52 . 1~2층</li>
+                        
+                    </ul>
+                    <p>영업시간:매일
+                        09:00 - 21:00</p>
+                    <p> 20:20 라스트오더</p>
+                </div>
+                <div class="m">
+                 
+                </div>
+            </div>
+
+        </div>  
+    </div>
+</body>
+</html>
