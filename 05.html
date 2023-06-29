@@ -5,6 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        window.onload = function() {
+            var count=0;
+        var image = document.getElementById('image');
+        var frames = [
+            'image/바다바라.png',
+            'image/바다바라1.png',
+            'image/바다바라2.png'
+        ];
+        
+        var image2 = document.getElementById('image2');
+        var frames2 = [
+            'img1/벙커하우스.png',
+            'img1/벙커하우스1.png',
+            'img1/벙커하우스2.png'
+        ];
+        var image3 = document.getElementById('image3');
+        var frames3 = [
+            'img2/갤럭시아.png',
+            'img2/갤럭시아1.png',
+            'img2/갤럭시아2.png'
+        ];
+        var image4 = document.getElementById('image4');
+        var frames4 = [
+            'img3/두가시.png',
+            'img3/두가시1.png',
+            'img3/두가시2.png'
+        ];
+        var image5 = document.getElementById('image5');
+        var frames5 = [
+            'img4/푸르곤.png',
+            'img4/푸르곤1.png',
+            'img4/푸르곤2.png'
+        ];
+        var image6 = document.getElementById('image6');
+        var frames6 = [
+            'img5/해지게.png',
+            'img5/해지게1.png',
+            'img5/해지게2.png'
+        ];
+        setInterval(function() {
+            changeImg(frames,image);
+            changeImg(frames2,image2);
+            changeImg(frames3,image3);
+            changeImg(frames4,image4);
+            changeImg(frames5,image5);
+            changeImg(frames6,image6);
+            count += 1;
+        },  600);
+
+        function changeImg(imgs,Attr){
+            Attr.src = imgs[count % imgs.length];
+    }
+
+    
+        
+    };  
+    </script>
     <style>
         /*전체 구획 설정*/
         #body{
@@ -115,6 +173,28 @@
                 width:350px;
                 height: 350px;
                 margin-top:0px
+            }#image{
+                width: 300px;
+                height: 200px;
+            }#image2{
+                width: 300px;
+                height: 200px;
+            }
+            #image3{
+                width: 300px;
+                height: 200px;
+            }
+            #image4{
+                width: 300px;
+                height: 200px;
+            }
+            #image5{
+                width: 300px;
+                height: 200px;
+            }
+            #image6{
+                width: 300px;
+                height: 200px;
             }
     </style>
 </head>
@@ -144,20 +224,21 @@
             <div id="middle_bottom">
                 <div class="m" id="one">바다바라
                     <img class="img" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MDdfMTk2%2FMDAxNjUxOTAwMDgxMjA0.3fFrUI7XCUjph1TuCtelu8Vau09mk0bM4jJh-iw6cIgg.ooSqfNbvxz3RuMOHP3hemrvGny7DfVLL1Da3fh9xOpcg.JPEG.tidy2080%2F1651900070667.jpg&type=sc960_832" >
-                    <h3>시그니처 메뉴</h3>
+                    <h3>시그니처메뉴   <img id="image">  </h3>
                     <ul>
                         <ol>
-                            <li>흑임자 돌담라뗴</li>
-                            <li>망고선셋 스무디</li>
+                            <li>한라봉아이스크림</li>
+                            <li>소금빵아이스크림</li>
+                            <li>제주목장아이스크림</li>
                         </ol>
                     </ul>
-                    <p>위치:제주 서귀포시 중문관광로72번길 29-51</p>
-                    <p>중문 해수욕장이 보이는 압도적 오션 파노라마뷰</p>
+                   <p>중문 해수욕장이 보이는 압도적 오션 파노라마뷰</p>
                     
                 </div>
                 <div class="m">번커하우스
                     <img class="img" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjJfNjgg%2FMDAxNjcxNzA1NTc4MTIz.UOBuSwG763Pzbuva5GxG4bt8P6xKFsvIZYUhTs1Zu9kg.S8v7v2xIexZxhqztuGHl4xhWU1y55I-EwJAedjPI4X8g.JPEG.jjongnr%2FScreenshot%25A3%25DF20221222%25A3%25DF190215.jpg&type=sc960_832" >
                     <ul>
+                        <img id="image2">
                         <li>위치:제주도 서귀포시 막숙포로 41번길 66</li>
                         <li>영업시간:매일 9:00~21:00</li>
                         <li>주차:가능</li>
@@ -172,13 +253,11 @@
                 </div>
                 <div class="m" id="two">갤럭시아
                     <img  class="img" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MjNfMzgg%2FMDAxNjUzMjMyOTc4ODE1.tJ29a3LfMe_2zYMQ_JOGvHMFz-VJ6hiA5PItKXAw790g.QCMbuS15UDL0CvwHDbcU4CtzlDcNoCt0OYmWmBR1W_Yg.JPEG.yejirhee2016%2FIMG_7616.jpg&type=sc960_832" >
-                    <h3>시그니처메뉴</h3>
-                    <p>산방송이</p>
+                    <h3>시그니처메뉴 <img id="image3"></h3>
+                    
                     <ul>
                     <li>위치:제주 서귀포시 안덕면 사계남로216번길 29 </li>
-                    <li>영업시간:매일 10:00 - 18:00
-                        17:30 라스트오더
-                    </li>
+                    <li>영업시간:매일 10:00-18:00 17:30 라스트오더 </li>
                     
                 </ul>
                 </div>
@@ -187,20 +266,9 @@
                    <ul>
                     <li>위치:제주 서귀포시 안덕면 대평감산로 9</li>
                     <h3>영업시간</h3>
+                    <h3>메뉴 <img id="image4"> </h3>
                   </ul>
-                  <p>일
-                    10:00 - 19:00</p>
-                    <p> 월 
-                        10:00 - 19:00</p>
-                    <p>화 10:00 - 19:00</p>
-                   <p>수
-                    정기휴무 (매주 수요일)</p> 
-                    <p> 목
-                        10:00 - 19:00</p>
-                   <p> 금
-                    10:00 - 19:00</p>
-                   <p>토
-                    10:00 - 19:00</p>
+                  
                     
                 </div>
                 <div class="m">
@@ -211,37 +279,17 @@
                         <li>위치:제주 제주시 애월읍 납읍로 84</li>
                         <h3>영업시간</h3>
                         </ul>
-                        <P>일
-                            10:00 - 20:00
-                            19:00 라스트오더</P>
-                        <P>월
-                            10:00 - 20:00
-                            19:00 라스트오더</P>
-                        <P>화
-                            10:00 - 20:00
-                            19:00 라스트오더</P>
-                        <P>수
-                            10:00 - 20:00
-                            19:00 라스트오더</P>
-                        <P>목
-                            10:00 - 20:00
-                            19:00 라스트오더</P>
-                        <P>금
-                            10:00 - 20:00
-                            19:00 라스트오더</P>
-                        <P>토
-                            10:00 - 20:00
-                            19:00 라스트오더</P>
+                      <h3>메뉴 <img id="image5"></h3>
                 </div>
                 <div class="m">해지게
                     <img class="img"  src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230106_130%2F1672987010407WjhO5_PNG%2F2.png" >
                     <ul>
                         <li>위치:제주 제주시 애월읍 애월북서길 52 . 1~2층</li>
-                        
+                        <h3>메뉴 <img id="image6"></h3>
                     </ul>
                     <p>영업시간:매일
                         09:00 - 21:00</p>
-                    <p> 20:20 라스트오더</p>
+                   
                 </div>
                 <div class="m">
                  

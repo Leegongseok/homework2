@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.good li').hover(function(){
+                $(this).find('.subMenu').css('display','block');
+            },function(){
+                $(this).find('.subMenu').css('display','none');
+            
+            });
+        });
+    </script>
     <style>
         /*전체 구획 설정*/
         #body{
@@ -96,14 +107,29 @@
                 
                 font-size: 16px;
             }
-            .good{
+            ul li{
                 list-style: none;
+            }
+            .good{
                 font-size: 18px;
             }
-            .good li{
+            .good > li{
+                width: 100px;
+                height: 30px;
+                line-height:30px;
                 float:left;
                 margin-left: 15px;
                 margin-right: 10px;
+                
+                
+            }.subMenu{
+                width: 200px;
+               
+                padding:0;
+            }
+            .subMenu >li{
+                width:200px;
+                height:70px;
                 
             }
             .good span{
@@ -117,6 +143,17 @@
                 height: 350px;
                 margin-top:0px
             }
+            a{color:black;
+                text-decoration-line: none;
+
+            }.top_right >ul >li >ul{
+                width: 200px;
+                display: none;
+                position: absolute;
+                background:skyblue;
+            }
+		
+ 
     </style>
 </head>
 <body>
@@ -127,11 +164,26 @@
             
             <div class="top_right">
                 <ul class="good">
-                    <li ><a href="#one">올레길5코스</a></li>
-                    <span>|</span>
-                    <li ><a href="#two">올레길6코스</a></li>
-                    <span>|</span>
-                    <li ><a href="#three">올레길7코스</a></li>
+                <li ><a href="#one">올레길5코스</a>
+                    <ul class="subMenu">
+                        <li ><a href="#">남원큰엉해안경승지</a></li>
+                        <li><a href="#">쇠소깍</a></li>
+                    </ul>
+                </li>
+                    
+                <li ><a href="#two">올레길6코스</a>
+                        <ul class="subMenu">
+                            <li><a href="#">소천지</a></li>
+                            <li><a href="#">정방폭포</a></li>
+                        </ul>
+                </li>
+                    
+                    <li ><a href="#three">올레길7코스</a>
+                        <ul class="subMenu">
+                            <li><a href="#">외돌개</a></li>
+                            <li><a href="#">황우지해안</a></li>
+                        </ul>
+                </li>    
              </ul></div>
         </div>
         <div id="middle">
